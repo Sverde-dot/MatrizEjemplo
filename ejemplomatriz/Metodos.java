@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package ejemplomatriz;
+import Pedir;
 import java.util.Scanner;
 
 /**
@@ -16,11 +17,9 @@ public class Metodos {
     private int num;
     
     public int [][] matriz(int [][]tabla){
-        System.out.println("Introduce el numero");
-            num=sc.nextInt();
         for (int f =0;f<tabla.length;f++)
             for (int c =0;c<tabla[f].length;c++){
-                tabla [f][c]= num;
+                tabla[f][c]= num;
             }
         return tabla;
     }
